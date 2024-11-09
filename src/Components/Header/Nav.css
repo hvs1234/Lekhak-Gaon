@@ -1,0 +1,99 @@
+.nav-btn {
+    display: none;
+}
+
+.sticky .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    margin: 0 auto;
+    background: white;
+    color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sticky .top-nav {
+    display: none;
+}
+
+.sticky .nav-overlay {
+    opacity: 0;
+}
+
+.sticky .navlink {
+    color: black;
+}
+
+.sticky .nav-btn {
+    color: black;
+}
+
+.sticky .top_nav_text {
+    color: black;
+}
+
+@media(max-width:768px) {
+    .header {
+        padding: 3rem 0;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 100vh;
+        background: #585f91;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        opacity: 0.9;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        z-index: 9999;
+        padding: 1rem 3rem;
+    }
+
+
+    .navlink {
+        font-weight: 100;
+        color: white;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    .active .navbar {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 9999;
+    }
+
+    .active .navlink {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .active .nav-btn {
+        color: white;
+    }
+
+    .sticky .active .nav-btn {
+        color: black;
+    }
+}

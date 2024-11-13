@@ -51,6 +51,7 @@ const Nav = () => {
                 >
                   <Link
                     to={e.to}
+                    onClick={handleOnClick(e.to)}
                     className="flex items-center gap-[0.2rem] navlink text-[1.6rem] text-white font-normal transition-all duration-[0.2s] ease-linear hover:opacity-[0.5]"
                   >
                     {e.name} {e.icon}

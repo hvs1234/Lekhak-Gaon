@@ -9,6 +9,12 @@ const Handlers = () => {
   const homesliderdata = useSelector((state) => state.app.homesliderdata);
   const isActive = useSelector((state) => state.app.isActive);
   const animatedSections = useSelector((state) => state.app.animatedSections);
+  const mediamaindata = useSelector((state) => state.app.mediamaindata);
+  const medipicsdata = useSelector((state) => state.app.medipicsdata);
+  const mediavideodata = useSelector((state) => state.app.mediavideodata);
+
+  // Content Main API
+  const festivalmaindata = useSelector((state) => state.app.festivalmaindata);
 
   const handleOnClick = useCallback(
     (path) => (e) => {
@@ -78,6 +84,13 @@ const Handlers = () => {
     navlinkdata,
     homeabouttourdata,
     homesliderdata,
+    mediamaindata,
+    medipicsdata,
+    mediavideodata,
+
+    // Content Main API
+    festivalmaindata,
+
     toggleNavbar,
     useStickyNavbar,
     isActive,

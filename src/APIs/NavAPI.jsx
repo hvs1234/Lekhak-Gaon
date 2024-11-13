@@ -20,17 +20,17 @@ export const NavLinkData = [
   },
   {
     id: 3,
-    to: "/",
-    name: "Programme",
+    to: "/festival",
+    name: "SHM 2024",
   },
   {
     id: 4,
-    to: "/",
+    to: "/media",
     name: "Media",
     icon: <BiChevronDown size={20} />,
     dropdown: [
-      { name: "Photos", to: "/" },
-      { name: "Videos", to: "/" },
+      { name: "Photos", to: "/mediapics" },
+      { name: "Videos", to: "/mediavideos" },
     ],
   },
   {

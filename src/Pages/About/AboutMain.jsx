@@ -23,7 +23,7 @@ const AboutMain = () => {
             </h2>
           </div>
         </div>
-        <div className="py-[6rem] grid grid-cols-2 gap-[4rem] w-[100%] justify-center max-md:text-[1.6rem] max-xl:grid-cols-1">
+        <div className="py-[6rem] grid grid-cols-2 gap-[4rem] w-[100%] justify-center text-justify max-md:text-[1.6rem] max-xl:grid-cols-1">
           <div className="flex flex-col gap-[2rem] justify-center w-[100%]">
             <p className="text-[2rem] font-normal text-[#212121] max-md:text-[1.6rem]">
               ‘स्पर्श हिमालय’ का यह ‘लेखक गाँव’ हिमालय की गोद में एक ऐसा

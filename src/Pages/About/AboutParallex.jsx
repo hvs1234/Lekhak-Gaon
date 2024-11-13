@@ -8,7 +8,10 @@ const AboutParallex = () => {
 
   return (
     <>
-      <div className="py-[9rem] px-[20rem] w-[100%] relative object-cover bg-[url('/Media/About/7.jpg')] bg-no-repeat bg-center bg-cover bg-fixed">
+      <div
+        className="py-[9rem] px-[20rem] w-[100%] relative object-cover bg-[url('/Media/About/7.jpg')] bg-no-repeat bg-center bg-cover bg-fixed 
+        max-2xl:px-[5rem] max-md:px-[2rem]"
+      >
         <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-[#38389a] opacity-[0.5]"></div>
         <div className="relative w-[100%] flex flex-col justify-center items-center text-center gap-[2rem]">
           <h2 className="text-[4rem] max-md:text-[3rem] text-[white] font-normal">
@@ -22,7 +25,7 @@ const AboutParallex = () => {
             <Link
               to={"/"}
               onClick={handleOnClick("/")}
-              className="px-[4rem] py-[2rem] text-[2rem] text-[white] border-[1px] border-[white] rounded-full transition-all duration-[0.2s] ease-linear hover:opacity-[0.8]"
+              className="px-[4rem] py-[1rem] text-[2rem] text-[white] border-[1px] border-[white] rounded-full transition-all duration-[0.2s] ease-linear hover:opacity-[0.8]"
             >
               See Media
             </Link>

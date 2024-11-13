@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import Handlers from "../../Services/Handlers";
 import "./Nav.css";
 import { HiMenu } from "react-icons/hi";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Nav = () => {
   const { navlinkdata, handleOnClick, isActive, toggleNavbar } = Handlers();
   const [openDropdown, setOpenDropdown] = useState(null);
+  const dropdownRef = useRef(null);
 
   const handleMouseEnter = (id) => {
     setOpenDropdown(id);
@@ -16,6 +17,19 @@ const Nav = () => {
   const handleMouseLeave = () => {
     setOpenDropdown(null);
   };
+
+  const handleClickOutside = (e) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+      setOpenDropdown(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -48,13 +62,15 @@ const Nav = () => {
                       px-[1rem] mt-[1rem] max-[768px]:left-[-4rem] max-[768px]:w-[200px] max-[768px]:bg-[#65659c] 
                       max-[768px]:border-[1px] max-[768px]:border-[grey]"
                       onMouseLeave={handleMouseLeave}
+                      ref={dropdownRef}
                     >
                       {e.dropdown.map((item, index) => (
                         <li key={index}>
                           <Link
                             to={item.to}
                             onClick={handleOnClick(item.to)}
-                            className="flex flex-col w-[auto] text-[1.6rem] text-[#212121] px-[1rem] py-[0.5rem] hover:bg-gray-200 max-[768px]:text-[white]"
+                            className="flex flex-col w-[auto] text-[1.6rem] text-[#212121] px-[1rem] py-[0.5rem] hover:bg-gray-200 
+                            max-[768px]:text-[white]"
                           >
                             {item.name}
                           </Link>

@@ -1,6 +1,6 @@
 // import React from 'react'
 import temple_icon from "/Media/temple-icon.png";
-import home_about_img1 from "/Media/About/2.jpg";
+import home_about_img1 from "/Media/Home/1.jpg";
 import Handlers from "../../Services/Handlers";
 import { useRef } from "react";
 
@@ -26,9 +26,9 @@ const HomeAbout = () => {
             />
           </div>
           <h2 className="text-[4rem] font-normal text-[#212121] max-md:text-[3rem]">
-            हिमालय की गोद में साहित्य का जश्न
+            भारत का पहला लेखक गाँव
           </h2>
-          <p className="text-[2rem] font-normal text-[#212121] max-md:text-[1.6rem] font-[Saira]">
+          <p className="text-[2rem] font-normal text-[#212121] max-md:text-[1.6rem] font-[Saira] text-justify">
             धरती का स्वर्ग कहे जाने वाले हिमालय ने विश्व कल्याण के पथ पर
             सुख,समृद्धि, अन्न, धन, आरोग्यता और विश्व शांति के द्वार प्राणी जगत
             के लिए खोले हैं। दिव्य हिमालय के कण-कण की अलौकिकता को महसूस करने,
@@ -48,10 +48,21 @@ const HomeAbout = () => {
             कालजयी रचनाओं का सृजन कर आमजन के बीच लोकप्रियता हासिल की।
           </p>
         </div>
+        <div className="flex flex-col gap-[2rem] w-[100%] justify-center items-center text-center pt-[4rem]">
+          <div className="w-[100%] flex items-center justify-center">
+            <img
+              src={temple_icon}
+              alt="icon"
+              className="w-[30%] max-sm:w-[50%] max-[400px]:w-[100%]"
+            />
+          </div>
+          <h2 className="text-[4rem] font-normal text-[#212121] max-md:text-[3rem]">
+            लेखक गाँव के विशेष परिसर
+          </h2>
+        </div>
         <div
           ref={sectionRef}
-          className={`grid grid-cols-6 gap-[1rem] justify-center w-[100%] py-[6rem] max-xl:grid-cols-4 
-          max-md:grid-cols-3 max-[500px]:grid-cols-1 ${
+          className={`grid grid-cols-3 gap-[1rem] justify-center w-[100%] py-[1rem] max-sm:grid-cols-1 ${
             animatedSections.homeAboutTourSection
               ? "animate-fadeInUp opacity-100"
               : "opacity-0"

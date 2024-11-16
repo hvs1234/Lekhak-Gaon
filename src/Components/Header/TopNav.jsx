@@ -1,17 +1,25 @@
 // import React from 'react'
-import logo_main from "/Media/logo-main.jpg"
+import { Link } from "react-router-dom";
+import logo_main from "/Media/logo-main.png";
+import Handlers from "../../Services/Handlers";
 
 const TopNav = () => {
+  const { handleOnClick } = Handlers();
+
   return (
     <>
       <div
         className="top-nav relative z-[9999] w-[100%] px-[20rem] py-[1rem] flex items-center justify-between gap-[2rem] 
         max-xl:px-[5rem] max-md:px-[2rem] max-[750px]:flex-col max-[750px]:items-start"
       >
-        <div className="flex items-center justify-start gap-[1rem]">
-          <img src={logo_main} alt="logo" className="w-[50%] rounded-md" />
-        </div>
-        <div className="flex items-center gap-[4rem]">
+        <Link
+          to={"/"}
+          onClick={handleOnClick("/")}
+          className="flex items-center justify-start gap-[1rem]"
+        >
+          <img src={logo_main} alt="logo" className="w-[50%] rounded-md brightness-[2]" />
+        </Link>
+        <div className="flex items-center gap-[4rem] max-[400px]:flex-col max-[400px]:gap-[1rem] max-[400px]:items-start">
           <div className="flex items-center">
             <a
               href="mailto:lekhakgaon309@gmail.com"

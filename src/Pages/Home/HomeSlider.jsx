@@ -35,7 +35,7 @@ const HomeSlider = () => {
           />
         </div>
         <h2 className="text-[4rem] font-normal text-[#575797] max-md:text-[3rem]">
-          What Our Attendees Say!
+          लेखक गांव में पहुंची विभूतियों ने साझा किए विचार
         </h2>
       </div>
       <Swiper
@@ -58,17 +58,17 @@ const HomeSlider = () => {
           <SwiperSlide
             key={e.id}
             ref={sectionRef}
-            className={`flex justify-center items-center h-[100%] w-[100%] ${
-              animatedSections.homeSliderSection
-                ? "animate-fadeInUp opacity-100"
-                : "opacity-0"
-            }`}
+            className={`flex justify-center items-center h-[100vh] w-[100%] ${e.bgImg} bg-no-repeat bg-center bg-cover 
+              relative object-cover w-[100%] ${
+                animatedSections.homeSliderSection
+                  ? "animate-fadeInUp opacity-100"
+                  : "opacity-0"
+              }`}
           >
-            <img
-              src={e.img}
-              alt="img"
-              className="w-[100%] h-[100%] rounded-md block object-cover"
-            />
+            <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-[black] opacity-[0]"></div>
+            <div className="relative flex items-end justify-start h-[100%] px-[10rem] py-[10rem] w-[100%] text-center">
+              <h2 className="text-[4rem] max-md:text-[3rem] font-normal text-[white] bg-[black] rounded-md px-[2rem] py-[0.5rem]">{e.title}</h2>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

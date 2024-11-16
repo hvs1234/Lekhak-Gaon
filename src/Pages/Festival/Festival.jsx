@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import { useState } from "react";
 import ContentMain from "../../Components/Card/ContentMain";
 import Footer from "../../Components/Footer/Footer";
 import ScrollTop from "../../Components/Footer/ScrollTop";
@@ -8,10 +9,14 @@ import Handlers from "../../Services/Handlers";
 import FestivalMedia from "./FestivalMedia";
 import FestivalSlider from "./FestivalSlider";
 import temple_icon from "/Media/temple-icon.png";
+import { HomeWatchVideoData } from "../../APIs/WatchVideoAPI";
+import WatchVideo from "../../Components/Card/WatchVideo";
 
 const Festival = () => {
   const { useStickyNavbar, festivalmaindata } = Handlers();
   useStickyNavbar();
+
+  const [homewatchvideodata] = useState(HomeWatchVideoData);
 
   return (
     <>
@@ -43,6 +48,9 @@ const Festival = () => {
 
       <ContentMain contentmaindata={festivalmaindata} />
       <FestivalMedia />
+      <div className="py-[0] px-[20rem] w-[100%] relative object-cover max-2xl:px-[5rem] max-md:px-[2rem]">
+        <WatchVideo watchvideodata={homewatchvideodata} />
+      </div>
       <FestivalSlider />
       {/* Footer */}
 

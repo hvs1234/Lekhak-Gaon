@@ -1,12 +1,15 @@
 // import React from 'react'
 import temple_icon from "/Media/temple-icon.png";
-import home_about_img1 from "/Media/Home/1.jpg";
 import Handlers from "../../Services/Handlers";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import WatchVideo from "../../Components/Card/WatchVideo";
+import { HomeWatchVideoData } from "../../APIs/WatchVideoAPI";
 
 const HomeAbout = () => {
   const { homeabouttourdata, useScrollAnimation, animatedSections } =
     Handlers();
+
+  const [homewatchvideodata] = useState(HomeWatchVideoData);
 
   const sectionRef = useRef(null);
 
@@ -94,13 +97,7 @@ const HomeAbout = () => {
             );
           })}
         </div>
-        <div className="w-[100%] pt-[0rem] pb-[0rem] flex items-center justify-center">
-          <img
-            src={home_about_img1}
-            alt="img"
-            className="w-[100%] rounded-md"
-          />
-        </div>
+        <WatchVideo watchvideodata={homewatchvideodata} />
       </div>
     </>
   );

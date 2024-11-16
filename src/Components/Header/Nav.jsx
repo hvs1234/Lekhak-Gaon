@@ -1,4 +1,3 @@
-// import React from 'react'
 import { Link } from "react-router-dom";
 import Handlers from "../../Services/Handlers";
 import "./Nav.css";
@@ -50,8 +49,7 @@ const Nav = () => {
                   onMouseEnter={() => handleMouseEnter(e.id)}
                 >
                   <Link
-                    to={e.to}
-                    onClick={handleOnClick(e.to)}
+                    to={e.dropdown ? "#" : e.to}
                     className="flex items-center gap-[0.2rem] navlink text-[1.6rem] text-white font-normal transition-all duration-[0.2s] ease-linear hover:opacity-[0.5]"
                   >
                     {e.name} {e.icon}
@@ -104,15 +102,15 @@ const Nav = () => {
             </Link>
           </div>
           <div className="">
-            <Link
-              to={"/about"}
+            <a
+              href="https://www.youtube.com/@lekhakgaon/streams"
+              target="_blank"
               id="nav-more"
-              onClick={handleOnClick("/about")}
               className="bg-[crimson] text-[white] text-[1.6rem] font-normal px-[2rem] py-[0.8rem] rounded-md hover:opacity-[0.8] 
               transition-all duration-[0.2s] ease-linear max-sm:px-[1rem]"
             >
-              Know More
-            </Link>
+              Watch Now
+            </a>
           </div>
         </div>
       </div>

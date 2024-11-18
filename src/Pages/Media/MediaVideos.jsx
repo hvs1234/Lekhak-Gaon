@@ -27,7 +27,7 @@ const MediaVideos = () => {
             />
           </div>
           <h2 className="text-[4rem] text-[#212121] max-md:text-[3rem]">
-            धार्मिक स्थलों का अद्भुत सफर
+            स्पर्श हिमालय महोत्सव 2024 (साहित्य, संस्कृति एवं कला सम्मेलन)
           </h2>
         </div>
         <div className="w-[100%] grid grid-cols-3 gap-[2rem] justify-center items-center rounded-md max-lg:grid-cols-1">

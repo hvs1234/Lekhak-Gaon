@@ -35,7 +35,7 @@ export const NavLinkData = [
   },
   {
     id: 5,
-    to: "/",
+    to: "/contact",
     name: "Contact Us",
   },
 ];

@@ -4,14 +4,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import Handlers from "../../Services/Handlers";
-import temple_icon from "/Media/temple-icon.png";
 
-const AboutSlider = () => {
+const ContactSlider = () => {
   const { homesliderdata, useScrollAnimation, animatedSections } = Handlers();
   const swiperRef = useRef(null);
   const sectionRef = useRef(null);
 
-  useScrollAnimation(sectionRef, "homeSliderSection", 0);
+  useScrollAnimation(sectionRef, "contactSliderSection", 0);
 
   useEffect(() => {
     const swiper = swiperRef.current.swiper;
@@ -26,18 +25,6 @@ const AboutSlider = () => {
     <div
       className={`py-[6rem] px-[20rem] w-[100%] h-[100%] relative object-cover max-2xl:px-[5rem] max-md:px-[2rem] bg-[white]`}
     >
-      <div className="flex flex-col gap-[1rem] w-[100%] justify-center items-center text-center pb-[4rem]">
-        <div className="flex items-center justify-center w-[100%]">
-          <img
-            src={temple_icon}
-            alt="img"
-            className="w-[30%] max-sm:w-[50%] max-[400px]:w-[100%]"
-          />
-        </div>
-        <h2 className="text-[4rem] font-normal text-[#575797] max-md:text-[3rem]">
-          लेखक गांव में पहुंची विभूतियों ने साझा किए विचार
-        </h2>
-      </div>
       <Swiper
         ref={swiperRef}
         spaceBetween={30}
@@ -62,7 +49,7 @@ const AboutSlider = () => {
               e.bgImg
             } bg-no-repeat bg-center bg-cover 
               relative object-cover w-[100%] ${
-                animatedSections.homeSliderSection
+                animatedSections.contactSliderSection
                   ? "animate-fadeInUp opacity-100"
                   : "opacity-0"
               }`}
@@ -83,4 +70,4 @@ const AboutSlider = () => {
   );
 };
 
-export default AboutSlider;
+export default ContactSlider;

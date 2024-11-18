@@ -37,9 +37,9 @@ const Footer = () => {
                 &nbsp; SHM 2024
               </Link>
               <Link
-                to={"/"}
+                to={"/contact"}
                 className="hover:opacity-[0.6] transition-all duration-[0.2s] ease-linear text-[1.6rem] text-[#414141]"
-                onClick={handleOnClick("/")}
+                onClick={handleOnClick("/contact")}
               >
                 <i className="fa-solid fa-chevron-right text-[orange]"></i>
                 &nbsp; Contact Us

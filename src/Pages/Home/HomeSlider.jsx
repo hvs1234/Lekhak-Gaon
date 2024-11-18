@@ -58,7 +58,9 @@ const HomeSlider = () => {
           <SwiperSlide
             key={e.id}
             ref={sectionRef}
-            className={`flex justify-center items-center h-[100vh] w-[100%] ${e.bgImg} bg-no-repeat bg-center bg-cover 
+            className={`flex justify-center items-center h-[100vh] w-[100%] ${
+              e.bgImg
+            } bg-no-repeat bg-center bg-cover 
               relative object-cover w-[100%] ${
                 animatedSections.homeSliderSection
                   ? "animate-fadeInUp opacity-100"
@@ -66,8 +68,13 @@ const HomeSlider = () => {
               }`}
           >
             <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-[black] opacity-[0]"></div>
-            <div className="relative flex items-end justify-start h-[100%] px-[10rem] py-[10rem] w-[100%] text-center">
-              <h2 className="text-[4rem] max-md:text-[3rem] font-normal text-[white] bg-[black] rounded-md px-[2rem] py-[0.5rem]">{e.title}</h2>
+            <div className="relative flex flex-col gap-[2rem] items-start justify-end h-[100%] px-[10rem] py-[10rem] w-[100%] text-justify max-sm:px-[6rem] max-sm:py-[6rem]">
+              <p className="text-[2rem] max-md:text-[1.6rem] bg-[#42371d] text-[white] rounded-md px-[2rem] py-[0.5rem]">
+                {e.desc}
+              </p>
+              <h2 className="text-[3rem] max-md:text-[2rem] font-normal text-[white] bg-[#222222] rounded-md px-[2rem] py-[0.5rem]">
+                {e.title}
+              </h2>
             </div>
           </SwiperSlide>
         ))}

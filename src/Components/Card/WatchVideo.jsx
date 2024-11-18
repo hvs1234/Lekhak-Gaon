@@ -24,10 +24,10 @@ const WatchVideo = ({ watchvideodata }) => {
             />
           </div>
           <h2 className="text-[4rem] max-md:text-[3rem] font-normal text-[#48486e]">
-            2024 के आयोजन की झलकियाँ
+            स्पर्श हिमालय महोत्सव 2024 के आयोज की झलकियाँ
           </h2>
           <h2 className="text-[3rem] max-md:text-[2.5rem] font-normal text-[#212121]">
-            नई शुरुआत का वादा
+            हिमालय में रचनात्मकता का पर्व
           </h2>
           <div className="w-[100%] h-[1px] bg-[grey] my-[2rem]"></div>
           <div

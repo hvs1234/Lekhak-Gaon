@@ -27,7 +27,7 @@ const MediaPhotos = () => {
             />
           </div>
           <h2 className="text-[4rem] text-[#212121] max-md:text-[3rem]">
-            जीवन के अनमोल पलों का संग्रह
+            स्पर्श हिमालय महोत्सव 2024 (साहित्य, संस्कृति एवं कला सम्मेलन)
           </h2>
         </div>
         <div className="columns-1 gap-5 lg:gap-8 sm:columns-2 lg:columns-3 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8">

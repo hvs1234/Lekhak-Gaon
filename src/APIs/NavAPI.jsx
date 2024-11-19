@@ -12,10 +12,10 @@ export const NavLinkData = [
     name: "About Us",
     icon: <BiChevronDown size={20} />,
     dropdown: [
-      { name: "Book Your Festival", to: "/" },
       { name: "About LekhakGaon", to: "/about" },
-      { name: "Register", to: "/" },
-      { name: "Volunteers", to: "/" },
+      { name: "Book Your Festival", to: "/contact" },
+      { name: "Donate Book", to: "/donate" },
+      { name: "Partners", to: "/" },
     ],
   },
   {

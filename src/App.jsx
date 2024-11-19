@@ -8,6 +8,8 @@ import Media from "./Pages/Media/Media";
 import MediaPhotos from "./Pages/Media/MediaPhotos";
 import MediaVideos from "./Pages/Media/MediaVideos";
 import ContactUs from "./Pages/ContactUs/ContactUs";
+import Donate from "./Pages/Donate/Donate";
+import DonateMain from "./Pages/Donate/DonateMain";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
           <Route path="/mediapics" element={<MediaPhotos />}></Route>
           <Route path="/mediavideos" element={<MediaVideos />}></Route>
           <Route path="/contact" element={<ContactUs />}></Route>
+          <Route path="/donate" element={<Donate />}></Route>
+          <Route path="/donatemain" element={<DonateMain />}></Route>
         </Routes>
       </BrowserRouter>
     </>

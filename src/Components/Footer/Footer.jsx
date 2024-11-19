@@ -162,7 +162,7 @@ const Footer = () => {
               Social Accounts
             </h3>
             <div className="flex items-center gap-[1rem]">
-              <a href="#" target="_blank">
+              <a href="https://www.facebook.com/lekhakgaon" target="_blank">
                 <FaFacebook
                   size={40}
                   className="bg-[orangered] text-[white] rounded-full px-[0.5rem] py-[0.5rem] hover:opacity-[0.6] transition-all duration-[0.2s] ease-linear"

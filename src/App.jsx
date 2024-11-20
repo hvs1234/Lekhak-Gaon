@@ -10,6 +10,7 @@ import MediaVideos from "./Pages/Media/MediaVideos";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Donate from "./Pages/Donate/Donate";
 import DonateMain from "./Pages/Donate/DonateMain";
+import TravelStay from "./Pages/TravelStay/TravelStay";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/contact" element={<ContactUs />}></Route>
           <Route path="/donate" element={<Donate />}></Route>
           <Route path="/donatemain" element={<DonateMain />}></Route>
+          <Route path="/travelstay" element={<TravelStay />}></Route>
         </Routes>
       </BrowserRouter>
     </>

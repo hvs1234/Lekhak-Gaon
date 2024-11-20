@@ -112,7 +112,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div
+          {/* <div
             className="flex flex-col gap-[2rem] ml-auto mr-auto max-lg:ml-0 max-lg:mr-0 max-[560px]:justify-center max-[560px]:items-center
           max-[560px]:text-center max-[560px]:gap-[4rem]"
           >
@@ -153,7 +153,7 @@ const Footer = () => {
                 &nbsp; Programme
               </Link>
             </div>
-          </div>
+          </div> */}
           <div
             className="flex flex-col gap-[2rem] ml-auto mr-auto max-lg:ml-0 max-lg:mr-0 max-[560px]:justify-center max-[560px]:items-center
           max-[560px]:text-center max-[560px]:gap-[4rem]"

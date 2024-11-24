@@ -91,6 +91,9 @@ const HomeAbout = () => {
                   <p className="text-[2.2rem] text-[white] font-normal">
                     {e.title}
                   </p>
+                  <p className="text-[2.2rem] text-[white] font-normal">
+                    {e.subtitle}
+                  </p>
                   <p className="text-[1.6rem] text-[white]">{e.desc}</p>
                 </div>
               </div>

@@ -27,6 +27,7 @@ const Nav = () => {
   const handleNavigation = (path) => {
     navigate(path);
     window.scrollTo(0, 0);
+    toggleNavbar();
   };
 
   useEffect(() => {
@@ -97,8 +98,8 @@ const Nav = () => {
       <div className="flex items-center gap-[2rem] z-[99]">
         <div>
           <Link
-            to={"/donate"}
-            onClick={() => handleNavigation("/donate")}
+            to={"/donatebook"}
+            onClick={() => handleNavigation("/donatebook")}
             id="nav-register"
             className="bg-[#6464a2] text-[white] text-[1.6rem] font-normal 
               px-[2rem] py-[0.8rem] rounded-md hover:opacity-[0.8] transition-all duration-[0.2s] ease-linear max-sm:px-[1rem]"

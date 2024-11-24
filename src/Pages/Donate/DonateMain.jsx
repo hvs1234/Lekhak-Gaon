@@ -1,13 +1,70 @@
-// import React from 'react'
-
+import { useEffect, useRef, useState } from "react";
+import { CountUp } from "countup.js";
 import Footer from "../../Components/Footer/Footer";
 import ScrollTop from "../../Components/Footer/ScrollTop";
 import Header from "../../Components/Header/Header";
 import Handlers from "../../Services/Handlers";
+import PropTypes from "prop-types";
 
 const DonateMain = () => {
   const { useStickyNavbar } = Handlers();
   useStickyNavbar();
+
+  const AnimatedCounter = ({ id, end }) => {
+    const counterRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    // Observer to check if the counter is visible
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        },
+        { threshold: 0.5 }
+      );
+
+      if (counterRef.current) {
+        observer.observe(counterRef.current);
+      }
+
+      return () => {
+        if (counterRef.current) {
+          observer.unobserve(counterRef.current);
+        }
+      };
+    }, []);
+
+    // Start animation when visible
+    useEffect(() => {
+      if (isVisible) {
+        const counter = new CountUp(id, end, {
+          suffix: "+",
+        });
+        if (!counter.error) {
+          counter.start();
+        } else {
+          console.error(counter.error);
+        }
+      }
+    }, [isVisible, id, end]);
+
+    return (
+      <h3
+        id={id}
+        ref={counterRef}
+        className="counter-numbers text-[3rem] text-[crimson] font-normal"
+      >
+        {end}+
+      </h3>
+    );
+  };
+
+  AnimatedCounter.propTypes = {
+    id: PropTypes.string.isRequired,
+    end: PropTypes.number.isRequired,
+  };
 
   return (
     <>
@@ -72,6 +129,14 @@ const DonateMain = () => {
             </a>
           </div>
         </div>
+        <div className="flex items-center gap-[4rem] w-[100%] py-[2rem]">
+          <div className="counter-numbers flex items-center gap-[2rem] justify-center">
+            <h2 className="text-[3rem] font-normal text-[#414141]">
+              Books Donated:
+            </h2>
+            <AnimatedCounter id="team" end={4000} />
+          </div>
+        </div>
         <p className="text-[2rem] max-md:text-[1.6rem] font-normal text-[#212121] text-justify">
           आप अपने पूर्वजों की विरासतों को हमेशा साझा कीजिए तथा जनमानस तक इन्हें
           पहुंचाते हुए गौरवान्वित होइए। परम्परागत ज्ञान परम्परा को भावी पीढ़ी के
@@ -79,11 +144,15 @@ const DonateMain = () => {
         </p>
         <p className="text-[2rem] max-md:text-[1.6rem] font-normal text-[#212121] text-justify">
           अधिक जानकारी के लिए कृपया संपर्क कीजिए:{" "}
-          <a href="tel:9997277779" className="text-[crimson]">+91-9997277779</a>
+          <a href="tel:9997277779" className="text-[crimson]">
+            +91-9997277779
+          </a>
         </p>
         <p className="text-[2rem] max-md:text-[1.6rem] font-normal text-[#212121] text-justify">
           For mail query:{" "}
-          <a href="mailto:lekhakgaon309@gmail.com" className="text-[crimson]">lekhakgaon309@gmail.com</a>
+          <a href="mailto:lekhakgaon309@gmail.com" className="text-[crimson]">
+            lekhakgaon309@gmail.com
+          </a>
         </p>
       </div>
 

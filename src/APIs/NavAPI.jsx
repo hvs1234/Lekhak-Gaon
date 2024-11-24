@@ -14,8 +14,8 @@ export const NavLinkData = [
     dropdown: [
       { name: "About LekhakGaon", to: "/about" },
       { name: "Book Your Festival", to: "/contact" },
-      { name: "Donate Book", to: "/donatemain" },
-      { name: "Partners", to: "/" },
+      { name: "Donate Book", to: "/donatebook" },
+      { name: "Partners", to: "/partners" },
     ],
   },
   {

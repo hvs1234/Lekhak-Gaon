@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <div className="py-[9rem] px-[20rem] w-[100%] relative object-cover max-2xl:px-[5rem] max-md:px-[2rem] bg-[#f2f2f2] ml-auto mr-auto">
-        <div className="grid grid-cols-4 gap-[2rem] ml-auto mr-auto w-[100%] justify-center max-lg:grid-cols-2 max-lg:gap-[8rem] max-[560px]:grid-cols-1">
+        <div className="grid grid-cols-3 gap-[2rem] ml-auto mr-auto w-[100%] justify-center max-md:grid-cols-2 max-lg:gap-[8rem] max-[560px]:grid-cols-1">
           <div
             className="flex flex-col gap-[2rem] ml-auto mr-auto max-lg:ml-0 max-lg:mr-0 max-[560px]:justify-center max-[560px]:items-center
           max-[560px]:text-center max-[560px]:gap-[4rem]"

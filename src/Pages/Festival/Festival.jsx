@@ -36,7 +36,10 @@ const Festival = () => {
           />
         </div>
         <h2 className="text-[4rem] font-normal text-[#212121] max-md:text-[3rem]">
-          स्पर्श हिमालय महोत्सव 2024 (साहित्य, संस्कृति एवं कला सम्मेलन)
+          स्पर्श हिमालय महोत्सव 2024
+        </h2>
+        <h2 className="text-[3rem] font-normal text-[#212121] max-md:text-[2.5rem]">
+          (साहित्य, संस्कृति एवं कला सम्मेलन)
         </h2>
         <p className="text-[2rem] font-normal text-[#212121] max-md:text-[1.6rem]">
           मुख्य अतिथि के रूप में पहुंचे पूर्व राष्ट्रपति रामनाथ कोविंद ने कहा,

@@ -19,10 +19,10 @@ const PartnersMain = () => {
             />
           </div>
           <h2 className="text-[4rem] max-md:text-[3rem] text-[#212121]">
-            Outreach Partners
+            सहभागी
           </h2>
         </div>
-        <LogoCard logodata={partnersLogoData}/>
+        <LogoCard logodata={partnersLogoData} />
       </div>
     </>
   );

@@ -13,7 +13,7 @@ const MediaVideos = () => {
   return (
     <>
       <Header />
-      <div className="section-main py-[9rem] px-[20rem] w-[100%] h-[70vh] relative object-cover bg-[url('/Media/About/10.jpg')] bg-no-repeat bg-center bg-cover max-2xl:px-[5rem] max-md:px-[2rem] ">
+      <div className="section-main py-[9rem] px-[20rem] w-[100%] h-[70vh] relative object-cover bg-[url('/Media/About/28.jpg')] bg-no-repeat bg-center bg-cover max-2xl:px-[5rem] max-md:px-[2rem] ">
         <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-[#333395] opacity-[0.2]"></div>
       </div>
 
@@ -27,7 +27,10 @@ const MediaVideos = () => {
             />
           </div>
           <h2 className="text-[4rem] text-[#212121] max-md:text-[3rem]">
-            स्पर्श हिमालय महोत्सव 2024 (साहित्य, संस्कृति एवं कला सम्मेलन)
+            स्पर्श हिमालय महोत्सव 2024
+          </h2>
+          <h2 className="text-[3rem] text-[#212121] max-md:text-[2.5rem]">
+            (साहित्य, संस्कृति एवं कला सम्मेलन)
           </h2>
         </div>
         <div className="w-[100%] grid grid-cols-3 gap-[2rem] justify-center items-center rounded-md max-lg:grid-cols-1">

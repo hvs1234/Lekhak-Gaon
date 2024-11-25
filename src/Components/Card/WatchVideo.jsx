@@ -16,7 +16,9 @@ const WatchVideo = ({ watchvideodata }) => {
         <div
           className={`flex flex-col gap-[2rem] w-[100%] justify-center items-center text-center`}
         >
-          <div className={`flex items-center justify-center w-[100%] relative`}>
+          <div
+            className={`flex items-center justify-center w-[100%] h-[100%] relative`}
+          >
             <img
               src={temple_icon}
               alt="img"
@@ -24,10 +26,10 @@ const WatchVideo = ({ watchvideodata }) => {
             />
           </div>
           <h2 className="text-[4rem] max-md:text-[3rem] font-normal text-[#48486e]">
-            स्पर्श हिमालय महोत्सव 2024 के आयोज की झलकियाँ
+            स्पर्श हिमालय महोत्सव 2024
           </h2>
-          <h2 className="text-[3rem] max-md:text-[2.5rem] font-normal text-[#212121]">
-            हिमालय में रचनात्मकता का पर्व
+          <h2 className="text-[3rem] text-[#212121] font-normal max-md:text-[2.5rem]">
+            (साहित्य, संस्कृति एवं कला सम्मेलन)
           </h2>
           <div className="w-[100%] h-[1px] bg-[grey] my-[2rem]"></div>
           <div
@@ -49,12 +51,12 @@ const WatchVideo = ({ watchvideodata }) => {
                   }}
                   key={e.id}
                 >
-                  <div className="flex flex-col rounded-md justify-start items-center text-center bg-[tomato] px-[2rem] py-[2rem] w-[100%]">
+                  <div className="flex flex-col mb-auto rounded-md justify-start items-center text-center bg-[tomato] px-[2rem] py-[2rem] w-[100%]">
                     <h2 className="text-[white] text-[2rem] max-md:text-[1.6rem] font-normal">
                       {e.title}
                     </h2>
                   </div>
-                  <div className="flex flex-col justify-between items-center text-center gap-[4rem] w-[100%] px-[2rem] py-[2rem]">
+                  <div className="flex flex-col justify-between items-center mt-auto text-center gap-[4rem] h-[auto] w-[100%] px-[2rem] py-[2rem]">
                     <p className="text-[2rem] max-md:text-[1.6rem] text-[#212121] font-normal">
                       {e.desc}
                     </p>
@@ -62,7 +64,8 @@ const WatchVideo = ({ watchvideodata }) => {
                       <a
                         href={e.videolink}
                         target="_blank"
-                        className="text-[2rem] text-[blue] border-[2px] border-[yellow] rounded-md px-[4rem] py-[1rem] transition-all duration-[0.2s] ease-linear hover:opacity-[0.8] cursor-pointer max-sm:px-[2rem] max-sm:text-[1.6rem]"
+                        className="text-[2rem] text-[blue] border-[2px] border-[yellow] rounded-md px-[4rem] py-[1rem] transition-all 
+                        duration-[0.2s] ease-linear hover:opacity-[0.8] cursor-pointer max-sm:px-[2rem] max-sm:text-[1.6rem]"
                       >
                         Watch Now
                       </a>

@@ -2,7 +2,7 @@ export const HomeWatchVideoData = [
   {
     id: 1,
     title: `हिमालय में रचनात्मकता का पर्व`,
-    desc: `हिमालय की गोद में साहित्य और रचनात्मकता का जश्न।`,
+    desc: `देहरादून के थानो स्थित लेखक ग्राम में आयोजित स्पर्श हिमालय महोत्सव-2024 का शुभारंभ। पूर्व राष्ट्रपति रामनाथ कोविंद ने बतौर मुख्य अतिथि इसका उद्घाटन किया।`,
     videolink: `https://www.youtube.com/watch?v=Ei1Afl3Ckro`,
   },
   {
@@ -23,28 +23,28 @@ export const HomeWatchVideoData = [
     desc: `पद्म विभूतियों ने साझा किए प्रेरणादायक अनुभव और विचार|`,
     videolink: `https://www.youtube.com/live/vYnPuDK5KIo?si=9LX1Pgt4uZHw3UYx`,
   },
-//   {
-//     id: 5,
-//     title: `Baal-O-Par: The Beating Heart of Poetry`,
-//     desc: `Gulzar, Rakhshanda Jalil and Pavan K. Varma in conversation`,
-//     videolink: ``,
-//   },
-//   {
-//     id: 6,
-//     title: `Baal-O-Par: The Beating Heart of Poetry`,
-//     desc: `Gulzar, Rakhshanda Jalil and Pavan K. Varma in conversation`,
-//     videolink: ``,
-//   },
-//   {
-//     id: 7,
-//     title: `Baal-O-Par: The Beating Heart of Poetry`,
-//     desc: `Gulzar, Rakhshanda Jalil and Pavan K. Varma in conversation`,
-//     videolink: ``,
-//   },
-//   {
-//     id: 8,
-//     title: `Baal-O-Par: The Beating Heart of Poetry`,
-//     desc: `Gulzar, Rakhshanda Jalil and Pavan K. Varma in conversation`,
-//     videolink: ``,
-//   },
+  //   {
+  //     id: 5,
+  //     title: `Baal-O-Par: The Beating Heart of Poetry`,
+  //     desc: `Gulzar, Rakhshanda Jalil and Pavan K. Varma in conversation`,
+  //     videolink: ``,
+  //   },
+  //   {
+  //     id: 6,
+  //     title: `Baal-O-Par: The Beating Heart of Poetry`,
+  //     desc: `Gulzar, Rakhshanda Jalil and Pavan K. Varma in conversation`,
+  //     videolink: ``,
+  //   },
+  //   {
+  //     id: 7,
+  //     title: `Baal-O-Par: The Beating Heart of Poetry`,
+  //     desc: `Gulzar, Rakhshanda Jalil and Pavan K. Varma in conversation`,
+  //     videolink: ``,
+  //   },
+  //   {
+  //     id: 8,
+  //     title: `Baal-O-Par: The Beating Heart of Poetry`,
+  //     desc: `Gulzar, Rakhshanda Jalil and Pavan K. Varma in conversation`,
+  //     videolink: ``,
+  //   },
 ];

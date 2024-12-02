@@ -60,7 +60,7 @@ const HomeAbout = () => {
             />
           </div>
           <h2 className="text-[4rem] font-normal text-[#212121] max-md:text-[3rem]">
-            लेखक गाँव के परिसर
+            लेखक गाँव परिसर
           </h2>
         </div>
         <div

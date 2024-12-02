@@ -44,7 +44,8 @@ const FestivalSlider = () => {
         pagination={{
           clickable: true,
           renderBullet: function (index, className) {
-            return `<span class="${className} px-[1rem] py-[0.2rem] w-[auto] h-[auto] bg-blue-500 rounded-full text-white text-center items-center justify-center text-[1.6rem]">${
+            return `<span class="${className} px-[1rem] py-[0.2rem] w-[auto] h-[auto] bg-blue-500 rounded-full text-white 
+            text-center items-center justify-center text-[1.6rem]">${
               index + 1
             }</span>`;
           },

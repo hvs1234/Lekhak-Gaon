@@ -15,7 +15,15 @@ const ContactMain = () => {
           </div>
           <div className="flex flex-col gap-[1rem] w-[100%] justify-center items-center text-center py-[2rem]">
             <p className="text-[2rem] max-md:text-[1.6rem] text-[white] font-normal uppercase">
-              West Dehli, India, 110044
+              Address
+            </p>
+            <p className="text-[2rem] max-md:text-[1.6rem] text-[white] font-normal capitalize">
+              Lekhak Gaon, Thano, Dehradun (Uttarakhand)
+            </p>
+          </div>
+          <div className="flex flex-col gap-[1rem] w-[100%] justify-center items-center text-center py-[2rem]">
+            <p className="text-[2rem] max-md:text-[1.6rem] text-[white] font-normal uppercase">
+              Phone
             </p>
             <p className="text-[2rem] max-md:text-[1.6rem] text-[white] font-normal">
               Phone: <a href="tel:9997277779">+91-9997277779</a>
@@ -26,15 +34,10 @@ const ContactMain = () => {
               Contact
             </p>
             <p className="text-[2rem] max-md:text-[1.6rem] text-[white] font-normal">
-              Mail: <a href="mailto:lekhakgaon309@gmail.com">lekhakgaon309@gmail.com</a>
-            </p>
-          </div>
-          <div className="flex flex-col gap-[1rem] w-[100%] justify-center items-center text-center py-[2rem]">
-            <p className="text-[2rem] max-md:text-[1.6rem] text-[white] font-normal uppercase">
-              West Dehli, India, 110044
-            </p>
-            <p className="text-[2rem] max-md:text-[1.6rem] text-[white] font-normal">
-              Phone: <a href="tel:9997277779">+91-9997277779</a>
+              Mail:{" "}
+              <a href="mailto:lekhakgaon309@gmail.com">
+                lekhakgaon309@gmail.com
+              </a>
             </p>
           </div>
         </div>

@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="py-[9rem] px-[20rem] w-[100%] relative object-cover max-2xl:px-[5rem] max-md:px-[2rem] bg-[#f2f2f2] ml-auto mr-auto">
+      <div className="py-[6rem] px-[20rem] w-[100%] relative object-cover max-2xl:px-[5rem] max-md:px-[2rem] bg-[#f2f2f2] ml-auto mr-auto">
         <div className="grid grid-cols-3 gap-[2rem] ml-auto mr-auto w-[100%] justify-center max-md:grid-cols-2 max-lg:gap-[8rem] max-[560px]:grid-cols-1">
           <div
             className="flex flex-col gap-[2rem] ml-auto mr-auto max-lg:ml-0 max-lg:mr-0 max-[560px]:justify-center max-[560px]:items-center
@@ -44,7 +44,7 @@ const Footer = () => {
                 <i className="fa-solid fa-chevron-right text-[orange]"></i>
                 &nbsp; Contact Us
               </Link>
-              <Link
+              {/* <Link
                 to={"/"}
                 className="hover:opacity-[0.6] transition-all duration-[0.2s] ease-linear text-[1.6rem] text-[#414141]"
                 onClick={handleOnClick("/")}
@@ -59,7 +59,7 @@ const Footer = () => {
               >
                 <i className="fa-solid fa-chevron-right text-[orange]"></i>
                 &nbsp; Privacy Policy
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div
@@ -79,22 +79,22 @@ const Footer = () => {
                 &nbsp; News & updates
               </Link>
               <Link
-                to={"/"}
+                to={"/festival"}
                 className="hover:opacity-[0.6] transition-all duration-[0.2s] ease-linear text-[1.6rem] text-[#414141]"
-                onClick={handleOnClick("/")}
+                onClick={handleOnClick("/festival")}
               >
                 <i className="fa-solid fa-chevron-right text-[orange]"></i>
                 &nbsp; Festival
               </Link>
               <Link
-                to={"/"}
+                to={"/contact"}
                 className="hover:opacity-[0.6] transition-all duration-[0.2s] ease-linear text-[1.6rem] text-[#414141]"
-                onClick={handleOnClick("/")}
+                onClick={handleOnClick("/contact")}
               >
                 <i className="fa-solid fa-chevron-right text-[orange]"></i>
                 &nbsp; Contact Us
               </Link>
-              <Link
+              {/* <Link
                 to={"/"}
                 className="hover:opacity-[0.6] transition-all duration-[0.2s] ease-linear text-[1.6rem] text-[#414141]"
                 onClick={handleOnClick("/")}
@@ -109,7 +109,7 @@ const Footer = () => {
               >
                 <i className="fa-solid fa-chevron-right text-[orange]"></i>
                 &nbsp; Privacy Policy
-              </Link>
+              </Link> */}
             </div>
           </div>
           {/* <div

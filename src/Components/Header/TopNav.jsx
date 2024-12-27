@@ -42,7 +42,7 @@ const TopNav = () => {
               &nbsp; +91-9997277779
             </a>
           </div>
-          <div className="">
+          {/* <div className="">
             <select
               name="lang"
               id="lang"
@@ -51,7 +51,7 @@ const TopNav = () => {
               <option value="Hindi">Hindi</option>
               <option value="Eng">English</option>
             </select>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

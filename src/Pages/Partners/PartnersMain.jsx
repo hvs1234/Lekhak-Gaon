@@ -3,6 +3,7 @@ import { useState } from "react";
 import LogoCard from "../../Components/Card/LogoCard";
 import temple_icon from "/Media/temple-icon.png";
 import { PartnersLogoData } from "../../APIs/LogoCardAPI";
+import HomeSlider from "../Home/HomeSlider";
 
 const PartnersMain = () => {
   const [partnersLogoData] = useState(PartnersLogoData);
@@ -24,6 +25,7 @@ const PartnersMain = () => {
         </div>
         <LogoCard logodata={partnersLogoData} />
       </div>
+      <HomeSlider />
     </>
   );
 };

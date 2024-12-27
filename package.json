@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
+    "axios": "^1.7.9",
     "countup.js": "^2.8.0",
     "literature-festival": "file:",
     "prop-types": "^15.8.1",

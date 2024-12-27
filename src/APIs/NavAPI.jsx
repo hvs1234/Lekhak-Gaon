@@ -36,7 +36,7 @@ export const NavLinkData = [
   {
     id: 5,
     to: "/travelstay",
-    name: "Travel",
+    name: "Location",
   },
   {
     id: 6,

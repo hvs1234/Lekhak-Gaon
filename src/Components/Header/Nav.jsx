@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link, useNavigate } from "react-router-dom";
 import Handlers from "../../Services/Handlers";
 import "./Nav.css";

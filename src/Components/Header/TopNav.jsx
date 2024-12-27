@@ -17,7 +17,11 @@ const TopNav = () => {
           onClick={handleOnClick("/")}
           className="flex items-center justify-start gap-[1rem]"
         >
-          <img src={logo_main} alt="logo" className="w-[50%] rounded-md brightness-[2]" />
+          <img
+            src={logo_main}
+            alt="logo"
+            className="w-[50%] rounded-md brightness-[2]"
+          />
         </Link>
         <div className="flex items-center gap-[4rem] max-[400px]:flex-col max-[400px]:gap-[1rem] max-[400px]:items-start">
           <div className="flex items-center">
@@ -37,6 +41,16 @@ const TopNav = () => {
               <i className="fa-solid fa-phone rounded-full text-[1.6rem] bg-[#475579] text-[white] px-[0.8rem] py-[0.8rem]"></i>
               &nbsp; +91-9997277779
             </a>
+          </div>
+          <div className="">
+            <select
+              name="lang"
+              id="lang"
+              className="border-[1px] border-[white] bg-[transparent] text-[white] text-[1.6rem] outline-none rounded-md px-[1rem] py-[0.5rem] cursor-pointer"
+            >
+              <option value="Hindi">Hindi</option>
+              <option value="Eng">English</option>
+            </select>
           </div>
         </div>
       </div>

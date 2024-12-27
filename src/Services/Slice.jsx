@@ -18,6 +18,7 @@ const initialState = {
   festivalmaindata: FestivalMainData,
 
   animatedSections: {},
+  language: "Hindi",
 };
 
 const Slice = createSlice({
@@ -45,9 +46,17 @@ const Slice = createSlice({
       const { section, isAnimated } = action.payload;
       state.animatedSections[section] = isAnimated;
     },
+    setLanguage(state, action) {
+      state.language = action.payload;
+    },
   },
 });
 
-export const { setPath, toggleNav, setAPIData, setAnimatedSection } =
-  Slice.actions;
+export const {
+  setPath,
+  toggleNav,
+  setAPIData,
+  setAnimatedSection,
+  setLanguage,
+} = Slice.actions;
 export default Slice.reducer;

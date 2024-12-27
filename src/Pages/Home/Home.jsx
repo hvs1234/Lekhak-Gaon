@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // import React from 'react'
 
 import Footer from "../../Components/Footer/Footer";
@@ -6,6 +7,7 @@ import Hero from "./Hero";
 import HomeAbout from "./HomeAbout";
 import HomeExperience from "./HomeExperience";
 import HomeSlider from "./HomeSlider";
+import HomeWheather from "./HomeWheather";
 
 const Home = () => {
   return (
@@ -13,6 +15,7 @@ const Home = () => {
       <Hero />
       <HomeAbout />
       <HomeExperience />
+      {/* <HomeWheather /> */}
       <HomeSlider />
 
       {/* Footer */}

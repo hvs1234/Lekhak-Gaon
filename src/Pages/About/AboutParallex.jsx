@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Handlers from "../../Services/Handlers";
 
 const AboutParallex = () => {
-  const { handleOnClick } = Handlers();
+  const { handleOnClick, language } = Handlers();
 
   return (
     <>
@@ -15,11 +15,15 @@ const AboutParallex = () => {
         <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-[#38389a] opacity-[0.5]"></div>
         <div className="relative w-[100%] flex flex-col justify-center items-center text-center gap-[2rem]">
           <h2 className="text-[4rem] max-md:text-[3rem] text-[white] font-normal">
-            लेखक और कलाकारों का सम्मान: लेखक गाँव
+            {language === "Hindi"
+              ? `लेखक और कलाकारों का सम्मान: लेखक गाँव`
+              : `Honoring writers and artists: Writer's Village`}
           </h2>
           <p className="text-[1.6rem] text-[white] font-normal">
-            लेखक गाँव साहित्यिक और कला की दुनिया में विलक्षण प्रतिभाओं को सम्मान
-            देने के लिए एक अद्भुत पहल है।
+            {language === "Hindi"
+              ? `लेखक गाँव साहित्यिक और कला की दुनिया में विलक्षण प्रतिभाओं को सम्मान
+            देने के लिए एक अद्भुत पहल है।`
+              : `Writer's Village is a wonderful initiative to honour exceptional talents in the literary and art world.`}
           </p>
           <div className="mt-[3rem]">
             <Link

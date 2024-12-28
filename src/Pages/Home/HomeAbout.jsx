@@ -6,7 +6,7 @@ import WatchVideo from "../../Components/Card/WatchVideo";
 import { HomeWatchVideoData } from "../../APIs/WatchVideoAPI";
 
 const HomeAbout = () => {
-  const { homeabouttourdata, useScrollAnimation, animatedSections } =
+  const { homeabouttourdata, useScrollAnimation, animatedSections, language } =
     Handlers();
 
   const [homewatchvideodata] = useState(HomeWatchVideoData);
@@ -29,10 +29,13 @@ const HomeAbout = () => {
             />
           </div>
           <h2 className="text-[4rem] font-normal text-[#212121] max-md:text-[3rem]">
-            भारत का पहला लेखक गाँव
+            {language === "Hindi"
+              ? `भारत का पहला लेखक गाँव`
+              : `Sparsh Himalaya Festival - 2024`}
           </h2>
           <p className="text-[2rem] font-normal text-[#212121] max-md:text-[1.6rem] font-[Saira] text-justify">
-            धरती का स्वर्ग कहे जाने वाले हिमालय ने विश्व कल्याण के पथ पर
+            {language === "Hindi"
+              ? `धरती का स्वर्ग कहे जाने वाले हिमालय ने विश्व कल्याण के पथ पर
             सुख,समृद्धि, अन्न, धन, आरोग्यता और विश्व शांति के द्वार प्राणी जगत
             के लिए खोले हैं। दिव्य हिमालय के कण-कण की अलौकिकता को महसूस करने,
             उसे आत्मसात करने,संस्कृति, सभ्यता और परम्पराओं को जानने, हिमालय के
@@ -48,7 +51,8 @@ const HomeAbout = () => {
             गाँव’ की स्थापना प्रस्तावित है। हिमालयीय वैषिश्ट्यता लिए ‘लेखक गाँव’
             का उद्देश्य देश-दुनियाँ के उन विलक्षण,विद्वान साहित्यकारों,
             गीतकारों, कलाकारों को ठौेर प्रदान करना है, जिनकी लेखनी नेअपने समय की
-            कालजयी रचनाओं का सृजन कर आमजन के बीच लोकप्रियता हासिल की।
+            कालजयी रचनाओं का सृजन कर आमजन के बीच लोकप्रियता हासिल की।`
+              : `The Himalayas, called the heaven on earth, have opened the doors of happiness, prosperity, food, wealth, health and world peace for the living world on the path of world welfare. The 'Sparsh Himalaya' campaign has resolved to feel the supernaturalness of every particle of the divine Himalayas, to assimilate it, to know the culture, civilization and traditions, to see and understand the various forms of the Himalayas, to take innovative initiatives in the direction of knowledge, science, research and investigation and to spread the importance of the Himalayas throughout the world. The 'Sparsh Himalaya Abhiyan', which teaches the lesson of brotherhood to the entire world through culture, spirituality, knowledge and science, and cherishes the Himalayas and Himalayan concerns, is committed to the conservation and promotion of the high original thinking, philosophy of life and invaluable abundant wealth of the Himalayas throughout the world. In the series of this concept, under the aegis of 'Sparsh Himalaya', it is proposed to establish a unique and distinctive 'Writer's Village' in the near future. The objective of the 'Writer's Village' with its Himalayan characteristics is to provide a place to those extraordinary, learned writers, lyricists and artists of the country and the world, whose pens have created timeless works of their time and gained popularity among the common people.`}
           </p>
         </div>
         <div className="flex flex-col gap-[2rem] w-[100%] justify-center items-center text-center pt-[4rem]">
@@ -60,7 +64,9 @@ const HomeAbout = () => {
             />
           </div>
           <h2 className="text-[4rem] font-normal text-[#212121] max-md:text-[3rem]">
-            लेखक गाँव परिसर
+            {language === "Hindi"
+              ? `लेखक गाँव परिसर`
+              : `Writers Village Campus`}
           </h2>
         </div>
         <div
@@ -89,12 +95,12 @@ const HomeAbout = () => {
                   className={`px-[2rem] py-[2rem] text-center flex flex-col gap-[1rem] w-[100%] h-[100%] justify-start items-center ${e.descBoxClass} rounded-b-2xl`}
                 >
                   <p className="text-[2.2rem] text-[white] font-normal">
-                    {e.title}
+                    {language === "Hindi" ? e.title : e.title2}
                   </p>
                   <p className="text-[2.2rem] text-[white] font-normal">
-                    {e.subtitle}
+                  {language === "Hindi" ? e.subtitle : e.subtitle2}
                   </p>
-                  <p className="text-[1.6rem] text-[white]">{e.desc}</p>
+                  <p className="text-[1.6rem] text-[white]">{language === "Hindi" ? e.desc : e.desc2}</p>
                 </div>
               </div>
             );

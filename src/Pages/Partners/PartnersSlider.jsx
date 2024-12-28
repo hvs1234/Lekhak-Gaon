@@ -6,13 +6,13 @@ import { Pagination } from "swiper/modules";
 import Handlers from "../../Services/Handlers";
 import temple_icon from "/Media/temple-icon.png";
 
-const HomeSlider = () => {
-  const { homesliderdata, useScrollAnimation, animatedSections, language } =
+const PartnersSlider = () => {
+  const { PartnersSliderdata, useScrollAnimation, animatedSections, language } =
     Handlers();
   const swiperRef = useRef(null);
   const sectionRef = useRef(null);
 
-  useScrollAnimation(sectionRef, "homeSliderSection", 0);
+  useScrollAnimation(sectionRef, "PartnersSliderSection", 0);
 
   useEffect(() => {
     const swiper = swiperRef.current.swiper;
@@ -58,7 +58,7 @@ const HomeSlider = () => {
         modules={[Pagination]}
         className="mySwiper w-[100%] h-[100%] flex justify-center items-center"
       >
-        {homesliderdata.map((e) => (
+        {PartnersSliderdata.map((e) => (
           <SwiperSlide
             key={e.id}
             ref={sectionRef}
@@ -66,7 +66,7 @@ const HomeSlider = () => {
               e.bgImg
             } bg-no-repeat bg-center bg-cover 
               relative object-cover w-[100%] ${
-                animatedSections.homeSliderSection
+                animatedSections.PartnersSliderSection
                   ? "animate-fadeInUp opacity-100"
                   : "opacity-0"
               }`}
@@ -87,4 +87,4 @@ const HomeSlider = () => {
   );
 };
 
-export default HomeSlider;
+export default PartnersSlider;

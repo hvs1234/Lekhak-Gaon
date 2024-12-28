@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setAnimatedSection, setPath, toggleNav } from "./Slice";
+import { setAnimatedSection, setLanguage, setPath, toggleNav } from "./Slice";
 import { useCallback, useEffect } from "react";
 
 const Handlers = () => {
@@ -12,6 +12,7 @@ const Handlers = () => {
   const mediamaindata = useSelector((state) => state.app.mediamaindata);
   const medipicsdata = useSelector((state) => state.app.medipicsdata);
   const mediavideodata = useSelector((state) => state.app.mediavideodata);
+  const language = useSelector((state) => state.app.language);
 
   // Content Main API
   const festivalmaindata = useSelector((state) => state.app.festivalmaindata);
@@ -79,6 +80,10 @@ const Handlers = () => {
     }, [sectionRef, sectionName, animatedSections, dispatch, delay]);
   };
 
+  const changeLanguage = (lang) => {
+    dispatch(setLanguage(lang));
+  };
+
   return {
     handleOnClick,
     navlinkdata,
@@ -96,6 +101,8 @@ const Handlers = () => {
     isActive,
     useScrollAnimation,
     animatedSections,
+    language,
+    changeLanguage,
   };
 };
 

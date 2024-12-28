@@ -7,7 +7,8 @@ import Handlers from "../../Services/Handlers";
 import temple_icon from "/Media/temple-icon.png";
 
 const AboutSlider = () => {
-  const { homesliderdata, useScrollAnimation, animatedSections } = Handlers();
+  const { homesliderdata, useScrollAnimation, animatedSections, language } =
+    Handlers();
   const swiperRef = useRef(null);
   const sectionRef = useRef(null);
 
@@ -35,7 +36,9 @@ const AboutSlider = () => {
           />
         </div>
         <h2 className="text-[4rem] font-normal text-[#575797] max-md:text-[3rem]">
-          लेखक गांव में पहुंची विभूतियों ने साझा किए विचार
+          {language === "Hindi"
+            ? `लेखक गांव में पहुंची विभूतियों ने साझा किए विचार`
+            : `The eminent personalities who reached the writer's village shared their views`}
         </h2>
       </div>
       <Swiper
@@ -70,10 +73,10 @@ const AboutSlider = () => {
             <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-[black] opacity-[0]"></div>
             <div className="relative flex flex-col gap-[2rem] items-start justify-end h-[100%] px-[10rem] py-[10rem] w-[100%] text-justify max-sm:px-[6rem] max-sm:py-[6rem]">
               <p className="text-[2rem] max-md:text-[1.6rem] bg-[#42371d] text-[white] rounded-md px-[2rem] py-[0.5rem]">
-                {e.desc}
+                {language === "Hindi" ? e.desc : e.desc2}
               </p>
               <h2 className="text-[3rem] max-md:text-[2rem] font-normal text-[white] bg-[#222222] rounded-md px-[2rem] py-[0.5rem]">
-                {e.title}
+                {language === "Hindi" ? e.title : e.title2}
               </h2>
             </div>
           </SwiperSlide>

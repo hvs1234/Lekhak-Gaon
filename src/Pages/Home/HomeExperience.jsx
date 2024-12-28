@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Handlers from "../../Services/Handlers";
 
 const HomeExperience = () => {
-  const { handleOnClick } = Handlers();
+  const { handleOnClick, language } = Handlers();
 
   return (
     <>
@@ -14,10 +14,14 @@ const HomeExperience = () => {
         <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-[black] opacity-[0.6]"></div>
         <div className="relative w-[100%] h-[100%] flex flex-col gap-[2rem] justify-center items-center text-center">
           <h2 className="text-[4rem] max-md:text-[3rem] font-normal text-[white]">
-            स्पर्श हिमालय महोत्सव - 2024
+            {language === "Hindi"
+              ? `स्पर्श हिमालय महोत्सव - 2024`
+              : `Sparsh Himalaya Festival - 2024`}
           </h2>
           <h2 className="text-[3rem] text-[white] font-normal max-md:text-[2.5rem]">
-            (अंतर्राष्ट्रीय साहित्य,संस्कृति एवं कला उत्सव)
+            {language === "Hindi"
+              ? `(अंतर्राष्ट्रीय साहित्य,संस्कृति एवं कला उत्सव)`
+              : `(International Literature, Culture and Arts Festival)`}
           </h2>
           <div className="mt-[3rem]">
             <Link

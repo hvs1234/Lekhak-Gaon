@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 // import React from 'react'
 import { Link } from "react-router-dom";
 import logo_main from "/Media/logo-main.png";
 import Handlers from "../../Services/Handlers";
 
 const TopNav = () => {
-  const { handleOnClick } = Handlers();
+  const { handleOnClick, language, changeLanguage } = Handlers();
 
   return (
     <>
@@ -42,16 +43,18 @@ const TopNav = () => {
               &nbsp; +91-9997277779
             </a>
           </div>
-          {/* <div className="">
+          <div className="">
             <select
               name="lang"
               id="lang"
-              className="border-[1px] border-[white] bg-[transparent] text-[white] text-[1.6rem] outline-none rounded-md px-[1rem] py-[0.5rem] cursor-pointer"
+              className="border-[1px] border-[white] bg-[transparent] text-[white] text-[1.6rem] outline-none rounded-md 
+              px-[1rem] py-[0.5rem] cursor-pointer"
+              onChange={(e) => changeLanguage(e.target.value)}
             >
-              <option value="Hindi">Hindi</option>
-              <option value="Eng">English</option>
+              <option value="Hindi">हिंदी</option>
+              <option value="English">English</option>
             </select>
-          </div> */}
+          </div>
         </div>
       </div>
     </>

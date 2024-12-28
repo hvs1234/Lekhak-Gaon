@@ -3,9 +3,11 @@ import temple_icon from "/Media/temple-icon.png";
 import ContentColsTwo from "../../Components/Card/ContentColsTwo";
 import { useState } from "react";
 import { AboutContentColsTwoData } from "../../APIs/ContentColsTwoAPI";
+import Handlers from "../../Services/Handlers";
 
 const AboutMain = () => {
   const [aboutcontentcolstwodata] = useState(AboutContentColsTwoData);
+  const { language } = Handlers();
 
   return (
     <>
@@ -22,7 +24,9 @@ const AboutMain = () => {
           </div>
           <div className="mb-[1rem]">
             <h2 className="text-[4rem] font-normal text-[#212121]">
-              हिमालय का लेखक गांव
+              {language === "Hindi"
+                ? `हिमालय का लेखक गांव`
+                : `Writer's Village in the Himalayas`}
             </h2>
           </div>
         </div>

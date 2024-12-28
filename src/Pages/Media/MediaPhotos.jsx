@@ -7,7 +7,7 @@ import Handlers from "../../Services/Handlers";
 import temple_icon from "/Media/temple-icon.png";
 
 const MediaPhotos = () => {
-  const { useStickyNavbar, medipicsdata } = Handlers();
+  const { useStickyNavbar, medipicsdata, language } = Handlers();
   useStickyNavbar();
 
   return (
@@ -27,10 +27,14 @@ const MediaPhotos = () => {
             />
           </div>
           <h2 className="text-[4rem] max-md:text-[3rem] font-normal text-[#48486e]">
-            स्पर्श हिमालय महोत्सव - 2024
+            {language === "Hindi"
+              ? `स्पर्श हिमालय महोत्सव - 2024`
+              : `Sparsh Himalaya Festival - 2024`}
           </h2>
           <h2 className="text-[3rem] text-[#212121] font-normal max-md:text-[2.5rem]">
-            (अंतर्राष्ट्रीय साहित्य,संस्कृति एवं कला उत्सव)
+            {language === "Hindi"
+              ? `(अंतर्राष्ट्रीय साहित्य,संस्कृति एवं कला उत्सव)`
+              : `(International Literature, Culture and Arts Festival)`}
           </h2>
         </div>
         <div className="columns-1 gap-5 lg:gap-8 sm:columns-2 lg:columns-3 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8">

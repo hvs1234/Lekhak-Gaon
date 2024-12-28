@@ -4,9 +4,11 @@ import LogoCard from "../../Components/Card/LogoCard";
 import temple_icon from "/Media/temple-icon.png";
 import { PartnersLogoData } from "../../APIs/LogoCardAPI";
 import HomeSlider from "../Home/HomeSlider";
+import Handlers from "../../Services/Handlers";
 
 const PartnersMain = () => {
   const [partnersLogoData] = useState(PartnersLogoData);
+  const { language } = Handlers();
 
   return (
     <>
@@ -20,7 +22,7 @@ const PartnersMain = () => {
             />
           </div>
           <h2 className="text-[4rem] max-md:text-[3rem] text-[#212121]">
-            सहभागी
+            {language === "Hindi" ? `सहभागी` : `Participant`}
           </h2>
         </div>
         <LogoCard logodata={partnersLogoData} />

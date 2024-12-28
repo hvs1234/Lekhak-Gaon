@@ -2,7 +2,9 @@ export const FestivalMainData = [
   {
     id: 1,
     title: `गढ़वाली और कुमाऊनी रचनाकारों का समागम`,
+    title2: `Gathering of Garhwali and Kumaoni Writers`,
     desc: `राज्य के प्रतिष्ठित रचनाकार एक स्थल पर मिले और अनेक कहानियों का स्थानीय बोली में स्थलीय अनुवाद के सत्र में प्रतिभाग किया। शिक्षा मंत्रालय ,भारत सरकार के राष्ट्रीय पुस्तक विन्यास द्वारा आयोजित यह कार्यक्रम सृजनीय और सराहनीय रहा। गढ़वाल तथा कुमाऊनी रचनाकारों द्वारा कवि सम्मेलन एवं पुस्तक चर्चा एक आकर्षण रहा। इस आयोजन में राज्य के साहित्यिक धरोहर को प्रोत्साहन मिला और नई पीढ़ी के रचनाकारों को प्रेरणा। स्थानीय बोलियों में रचित कहानियों और कविताओं के माध्यम से संस्कृति का संरक्षण हुआ। गढ़वाली और कुमाऊनी के अलावा जौनसारी और जौनपुरी जैसी भाषाओं को भी प्रमुखता मिली, जिससे राज्य की विविधता का उत्सव मनाया गया। इस प्रकार के कार्यक्रमों से साहित्य के प्रति जागरूकता बढ़ी और लोगों में स्थानीय भाषा व साहित्य के प्रति एक नई रुचि जाग्रत हुई।`,
+    desc2: `The renowned writers of the state gathered in one place and participated in a session on the local dialect's translation of various stories. Organized by the Ministry of Education, Government of India, under the National Book Layout, this event was both creative and commendable. The poetry conference and book discussion by Garhwali and Kumaoni writers were a major attraction. This event promoted the state's literary heritage and inspired a new generation of writers. Through stories and poems written in local dialects, the culture was preserved. Along with Garhwali and Kumaoni, languages like Jaunsari and Jaunpuri were also highlighted, celebrating the state's diversity. Such events have raised awareness about literature and generated new interest in local languages and literature.`,
     img: `/Media/Festival/13.jpg`,
     mainClass: ``,
     textClass: ``,
@@ -11,7 +13,9 @@ export const FestivalMainData = [
   {
     id: 2,
     title: `देश विदेश के हिन्दी साहित्यकारों का समागम`,
+    title2: `Gathering of Hindi Writers from India and Abroad`,
     desc: `देश विदेश के हिन्दी साहित्यकारों का मिलन,चर्चा,विवेचना, तथा एक साथ लेखक गांव में अनेक पुस्तकों का देश की जानी मानी हस्तियों के हाथों से लोकार्पण किया जाना नवोदित लेखकों को प्रोत्साहित कर गया। इस आयोजन में हिंदी साहित्य के विविध रंग देखने को मिले, जहां देश-विदेश के प्रतिष्ठित साहित्यकारों ने अपने अनुभव साझा किए। पुस्तकों का लोकार्पण और विचार-विमर्श से साहित्यिक वातावरण और अधिक समृद्ध हुआ, जिससे नवोदित लेखकों को प्रेरणा और मार्गदर्शन मिला। इस सम्मेलन ने साहित्यिक विचारों का आदान-प्रदान किया और लेखकों को अपनी रचनाओं को व्यापक मंच पर प्रस्तुत करने का अवसर दिया। इसमें स्थानीय और वैश्विक मुद्दों पर सार्थक चर्चा हुई, जो साहित्य की सामाजिक जिम्मेदारी को उजागर करती है। साथ ही, इसने युवा लेखकों को आत्मविश्वास और प्रेरणा दी, जिससे वे अपने लेखन को नई दिशा देने के लिए प्रोत्साहित हुए।`,
+    desc2: `The gathering, discussions, deliberations, and the launch of numerous books by renowned personalities in the writer's village inspired emerging authors. This event showcased the diverse hues of Hindi literature, where renowned writers from India and abroad shared their experiences. The book launches and the intellectual exchange enriched the literary environment, providing inspiration and guidance to new writers. The conference facilitated the exchange of literary ideas and gave writers an opportunity to present their works on a broader platform. Meaningful discussions on local and global issues highlighted the social responsibility of literature. Moreover, it gave young writers the confidence and inspiration to take their writing in new directions.`,
     img: `/Media/Festival/11.jpg`,
     mainClass: `bg-[#f2f2f2]`,
     textClass: `order-2`,
@@ -20,7 +24,9 @@ export const FestivalMainData = [
   {
     id: 3,
     title: `पद्म अलंकृत हस्तियां का गांव में मिलन राष्ट्रपति भवन का आभास दिला गया`,
+    title2: `Meeting of Padma Awardees in the Village Felt Like the Rashtrapati Bhavan`,
     desc: `लेखक गांव में इन विभूतियों का एक साथ मिलना,पूर्व राष्ट्रपति के साथ बातचीत करना और विभिन्न विषयों पर विचार करते देखन इस लेखक गांव की सराहनीय सोच की दर्शाता है। लेखक गांव में आध्यात्मिक चिंतकों, साहित्यकारों, चित्रकारों, छायाकारों ,राजनेताओं, विधि विशेषज्ञ, वैज्ञानिक, पर्यावरणविद्, शोधार्थियों,छात्र छात्राओं सहित ग्रामीणों और सैलानियों की निरंतरता से प्रतिभाग करना सुखद रहा। लेखक गांव में आयोजित इस अनोखे आयोजन ने कला, संस्कृति और विचारों के आदान-प्रदान का अद्वितीय मंच प्रदान किया। इस संगम ने प्रतिभागियों को विविध दृष्टिकोणों से प्रेरित किया, जिससे रचनात्मकता को नए आयाम मिले और साहित्य, विज्ञान व समाजसेवा के क्षेत्र में सार्थक संवाद स्थापित हुआ।`,
+    desc2: `The meeting of these luminaries in the writer's village, interacting with the former president and discussing various topics, reflects the commendable vision of this writer's village. The participation of spiritual thinkers, writers, painters, photographers, politicians, legal experts, scientists, environmentalists, researchers, students, and locals from the village in this event was delightful. This unique event provided an exceptional platform for the exchange of art, culture, and ideas. The gathering inspired participants with diverse perspectives, leading to new dimensions of creativity and establishing meaningful dialogues in the fields of literature, science, and social service.`,
     img: `/Media/Festival/5.jpg`,
     mainClass: ``,
     textClass: ``,
@@ -29,7 +35,9 @@ export const FestivalMainData = [
   {
     id: 4,
     title: `शास्त्रीय तथा सांस्कृतिक कार्यक्रमों का आकर्षण`,
+    title2: `Attraction of Classical and Cultural Programs`,
     desc: `गांव में प्रख्यात नृत्यांगना सोनल मानसिंह, राष्ट्रीय नाट्य अकादमी के कलाकारों, आंचलिक लोक कलाकारों और विभिन्न शिक्षण संस्थाओं के द्वारा प्रस्तुत प्रस्तुतियां बेहद खूबसूरत रही। इन प्रस्तुतियों ने गांव के सांस्कृतिक परिवेश को जीवंत बना दिया और दर्शकों को भारतीय कला की गहरी झलक प्रदान की। ग्रामीणों और आगंतुकों ने पारंपरिक संगीत, नृत्य और नाटकों का भरपूर आनंद लिया, जिससे संस्कृति के प्रति नई जागरूकता और सम्मान की भावना जाग्रत हुई। इन सांस्कृतिक प्रस्तुतियों ने सभी को भारतीय कला और परंपराओं से जोड़ने का काम किया। विभिन्न कला रूपों की यह विविधता, जैसे कि नृत्य, संगीत और नाटक, ने दर्शकों को भारतीय सांस्कृतिक धरोहर की गहरी समझ दी। साथ ही, यह आयोजन एक प्रेरणा बना, जिससे युवा पीढ़ी को अपनी सांस्कृतिक जड़ों से जुड़ने का अवसर मिला।`,
+    desc2: `The performances by renowned dancer Sonal Mansingh, National Academy of Theatre artists, regional folk artists, and various educational institutions were beautiful. These performances brought the cultural environment of the village to life and gave the audience a deep insight into Indian art. Villagers and visitors enjoyed traditional music, dance, and drama, fostering a new awareness and respect for culture. These cultural performances helped connect everyone with Indian art and traditions. The diversity of various art forms, such as dance, music, and theatre, provided the audience with a deep understanding of Indian cultural heritage. Moreover, this event became an inspiration, giving the younger generation an opportunity to connect with their cultural roots.`,
     img: `/Media/Festival/12.jpg`,
     mainClass: `bg-[#f2f2f2]`,
     textClass: `order-2`,
@@ -38,7 +46,9 @@ export const FestivalMainData = [
   {
     id: 5,
     title: `हिन्दी सीखने आए विदेशी छात्रों का लेखक गांव में आगमन`,
+    title2: `Arrival of Foreign Students Learning Hindi at the Writer's Village`,
     desc: `महोत्सव में छात्रों,अध्यापकों और कुलपतियों को आमंत्रित कर एक पहल की गई थी । स्थान स्थान पर छात्र और शिक्षकों का संवाद देखने को मिला। भारत में विभिन्न देशों से हिंदी सीखने के लिए विदेशी छात्रों का इस अवसर पर शैक्षिक भ्रमण आयोजित किया जाना महत्वपूर्ण दृष्टिकोण बना। लगभग 40 देशों के 120 बच्चों का यहां आना और हिन्दी विषय पर उनके द्वारा अनुभवों को साझा करना कार्यक्रम की वैश्विक स्तर पर स्थापित कर गया। इस शैक्षिक भ्रमण ने हिंदी भाषा और संस्कृति के वैश्विक प्रचार को बढ़ावा दिया। विदेशी छात्रों ने भारतीय समाज, उसकी विविधता और संस्कृति के बारे में गहरी समझ प्राप्त की। यह संवाद और सहयोग से हिंदी भाषा को अंतरराष्ट्रीय मंच पर मजबूती मिली।`,
+    desc2: `An initiative was taken by inviting students, teachers, and vice-chancellors to the festival. There was dialogue between students and teachers at various places. An educational tour for foreign students coming to India to learn Hindi was organized, which became an important perspective for the event. The arrival of 120 students from 40 countries and their sharing of experiences on the Hindi subject made the program globally recognized. This educational tour promoted the global spread of the Hindi language and culture. Foreign students gained a deeper understanding of Indian society, its diversity, and culture. This dialogue and collaboration strengthened the Hindi language on the international platform.`,
     img: `/Media/Festival/4.jpg`,
     mainClass: ``,
     textClass: ``,
@@ -47,8 +57,10 @@ export const FestivalMainData = [
   {
     id: 6,
     title: `संक्षेप में स्पर्श हिमालय महोत्सव`,
+    title2: `In Brief: Sparsh Himalaya Festival`,
     desc: `साहित्य,संगीत,कला,संस्कृति,सौंदर्य, सैर तथा संवाद का सुखद अवसर बन गया। ये उत्सव सरकारी आयोजनों की औपचारिकताओं से हटकर व्यवहारिक तथा विविधताओं से पूर्ण अभिनव प्रयास है। स्पर्श हिमालय फाउंडेशन का यह संयोजन पूर्ण रूप से लेखक साहित्यकार डॉ रमेश पोखरियाल निशंक की व्यक्तिगत रूचि,सोच उनके व्यवहारिक जीवन,लोगों से संवाद,संबंध और पूरे उत्सव में उनके सक्रिय आतिथ्य और सक्रियता की झलक दिखा रहा था। यह आयोजन उनकी सोच और दृष्टिकोण का परिणाम था, जिसमें साहित्यिक, सांस्कृतिक और शैक्षिक पहलुओं का समावेश था। डॉ. रमेश पोखरियाल निशंक के नेतृत्व में यह उत्सव न केवल प्रेरणादायक था, बल्कि लोगों के बीच सद्भाव और सामूहिकता का संदेश भी दिया।`,
-    img: `/Media/Festival/7.jpg`,
+    desc2: `It became a delightful occasion for literature, music, art, culture, beauty, travel, and dialogue. This festival is a practical and innovative attempt that breaks away from the formalities of government events and is filled with diversity. The arrangement by the Sparsh Himalaya Foundation reflected the personal interest, thought, and practical life of the writer and scholar Dr. Ramesh Pokhriyal Nishank. His active hospitality and participation throughout the event showed his commitment to dialogue and relations with people. This event was a result of his vision and perspective, which incorporated literary, cultural, and educational aspects. Under Dr. Ramesh Pokhriyal Nishank's leadership, the festival was not only inspiring but also conveyed a message of harmony and collectivity among people.`,
+    img: `/Media/Festival/9.jpg`,
     mainClass: `bg-[#f2f2f2]`,
     textClass: `order-2`,
     imgClass: `max-md:order-2`,
@@ -56,7 +68,9 @@ export const FestivalMainData = [
   {
     id: 7,
     title: `लेखक गांव में पहुंची विभूतियों ने साझा किए विचार`,
+    title2: `Prominent Personalities Share Their Thoughts at the Writers' Village`,
     desc: `प्रसून जोशी ( हिन्दी कवि, लेखक, पटकथा लेखक और भारतीय सिनेमा के गीतकार):- ने कहा कि हिमालय में यह गांव रचनात्मकता को विस्तार देगा। किसी भी रचना की उत्पत्ति के लिए एकांत और सृजनात्मक माहौल की आवश्यकता होती है, जिससे रचनाकार अपने स्वयं के अस्तित्व में डूब कर मोती निकाल सके और यह लेखक गाँव वही साबित होगा। प्रसून जोशी ने अपने शब्दों में यह भी जोड़ा कि इस तरह के आयोजनों से न केवल साहित्यिक और सांस्कृतिक धारा को बल मिलता है, बल्कि यह रचनाकारों को नयी दिशा और प्रेरणा भी प्रदान करता है। हिमालय की शांतिपूर्ण व प्रेरणादायक वातावरण में रचनाकार अपनी कला को निखार सकते हैं और वैश्विक स्तर पर अपनी पहचान बना सकते हैं। प्रसून जोशी ने यह भी कहा कि इस स्थान पर रचनात्मकता को फलीभूत होते देखना, भारतीय संस्कृति को सशक्त करेगा।`,
+    desc2: `Prasoon Joshi (Hindi poet, writer, screenwriter, and lyricist of Indian cinema) said that this village in the Himalayas will expand creativity. For any creation, solitude and a creative environment are required, where a creator can immerse themselves in their own existence and bring out pearls of creativity, and this Writers' Village will be just that. Prasoon Joshi also added that such events not only strengthen the literary and cultural streams but also provide new direction and inspiration to creators. In the peaceful and inspiring atmosphere of the Himalayas, creators can refine their art and establish their identity on a global level. Prasoon Joshi further stated that seeing creativity flourish in this place will empower Indian culture.`,
     img: `/Media/Festival/8.jpg`,
     mainClass: ``,
     textClass: ``,

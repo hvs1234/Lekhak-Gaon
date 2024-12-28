@@ -1,8 +1,11 @@
 // import React from 'react'
+import Handlers from "../../Services/Handlers";
 import temple_icon from "/Media/temple-icon.png";
 import PropTypes from "prop-types";
 
 const ContentMain = ({ contentmaindata }) => {
+  const { language } = Handlers();
+
   return (
     <>
       {contentmaindata.map((e) => {
@@ -23,10 +26,10 @@ const ContentMain = ({ contentmaindata }) => {
                 />
               </div>
               <h2 className="text-[3rem] font-normal text-[#212121] max-md:text-[2.5rem]">
-                {e.title}
+                {language === "Hindi" ? e.title : e.title2}
               </h2>
               <p className="text-[2rem] font-normal text-[#212121] max-md:text-[1.6rem] text-justify">
-                {e.desc}
+                {language === "Hindi" ? e.desc : e.desc2}
               </p>
             </div>
             <div

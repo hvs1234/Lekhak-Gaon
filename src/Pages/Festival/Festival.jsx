@@ -13,7 +13,7 @@ import { HomeWatchVideoData } from "../../APIs/WatchVideoAPI";
 import WatchVideo from "../../Components/Card/WatchVideo";
 
 const Festival = () => {
-  const { useStickyNavbar, festivalmaindata } = Handlers();
+  const { useStickyNavbar, festivalmaindata, language } = Handlers();
   useStickyNavbar();
 
   const [homewatchvideodata] = useState(HomeWatchVideoData);
@@ -36,16 +36,22 @@ const Festival = () => {
           />
         </div>
         <h2 className="text-[4rem] max-md:text-[3rem] font-normal text-[#48486e]">
-          स्पर्श हिमालय महोत्सव - 2024
+          {language === "Hindi"
+            ? `स्पर्श हिमालय महोत्सव - 2024`
+            : `Sparsh Himalaya Festival - 2024`}
         </h2>
         <h2 className="text-[3rem] text-[#212121] font-normal max-md:text-[2.5rem]">
-          (अंतर्राष्ट्रीय साहित्य,संस्कृति एवं कला उत्सव)
+          {language === "Hindi"
+            ? `(अंतर्राष्ट्रीय साहित्य,संस्कृति एवं कला उत्सव)`
+            : `(International Literature, Culture and Arts Festival)`}
         </h2>
         <p className="text-[2rem] font-normal text-[#212121] max-md:text-[1.6rem]">
-          मुख्य अतिथि के रूप में पहुंचे पूर्व राष्ट्रपति रामनाथ कोविंद ने कहा,
+          {language === "Hindi"
+            ? `मुख्य अतिथि के रूप में पहुंचे पूर्व राष्ट्रपति रामनाथ कोविंद ने कहा,
           देवभूमि में लेखक गांव की स्थापना से नए विचार और लेखन को एक बेहतर मंच
           मिलेगा, जिससे भविष्य में लेखक और साहित्यकार पैदा होंगे। लेखक गांव से
-          उपजे विचार देश-दुनिया को प्रभावित करेंगे
+          उपजे विचार देश-दुनिया को प्रभावित करेंगे`
+            : `Former President Ram Nath Kovind, who arrived as the chief guest, said, The establishment of a writer's village in Devbhoomi will provide a better platform for new ideas and writing, which will produce writers and litterateurs in the future. The ideas generated from the writer's village will influence the country and the world.`}
         </p>
       </div>
 

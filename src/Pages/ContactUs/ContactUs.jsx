@@ -4,6 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import ScrollTop from "../../Components/Footer/ScrollTop";
 import Header from "../../Components/Header/Header";
 import Handlers from "../../Services/Handlers";
+import ContactFeedback from "./ContactFeedback";
 import ContactForm from "./ContactForm";
 import ContactMain from "./ContactMain";
 import ContactSlider from "./ContactSlider";
@@ -25,6 +26,7 @@ const ContactUs = () => {
       <ContactMain />
       <ContactForm />
       <ContactSlider />
+      <ContactFeedback />
 
       {/* Footer */}
 

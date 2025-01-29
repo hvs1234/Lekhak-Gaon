@@ -41,7 +41,7 @@ const Nav = () => {
   return (
     <div
       className={`header w-[100%] top-0 left-0 transition-all duration-[0.3s] ease-out 
-        px-[20rem] py-[1rem] flex items-center gap-[2rem] justify-between max-xl:px-[5rem] max-md:px-[2rem] z-[99] ${
+        px-[20rem] py-[1rem] flex items-center gap-[2rem] justify-between max-2xl:px-[5rem] max-md:px-[2rem] z-[99] ${
           isActive ? "active" : ""
         }`}
     >

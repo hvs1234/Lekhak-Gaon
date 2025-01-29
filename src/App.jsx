@@ -12,6 +12,7 @@ import Donate from "./Pages/Donate/Donate";
 import DonateMain from "./Pages/Donate/DonateMain";
 import TravelStay from "./Pages/TravelStay/TravelStay";
 import Partners from "./Pages/Partners/Partners";
+import Vision from "./Pages/Vision/Vision";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/donate" element={<Donate />}></Route>
           <Route path="/donatebook" element={<DonateMain />}></Route>
           <Route path="/travelstay" element={<TravelStay />}></Route>
+          <Route path="/vision" element={<Vision />}></Route>
           <Route path="/partners" element={<Partners />}></Route>
         </Routes>
       </BrowserRouter>

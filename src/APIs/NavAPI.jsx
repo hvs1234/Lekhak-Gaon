@@ -40,6 +40,11 @@ export const NavLinkData = [
   },
   {
     id: 6,
+    to: "/vision",
+    name: "Our Vision",
+  },
+  {
+    id: 7,
     to: "/contact",
     name: "Contact Us",
   },

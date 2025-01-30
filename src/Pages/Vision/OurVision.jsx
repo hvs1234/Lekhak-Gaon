@@ -25,19 +25,19 @@ const OurVision = () => {
         </div>
 
         <div className="grid grid-cols-2 mt-[6rem] w-[100%] gap-[4rem] justify-center max-xl:grid-cols-1">
-          <div className="flex flex-col justify-center gap-[1rem] w-[100%] opacity-0 translate-x-[-50px] animate-[fadeInLeft_1s_ease-out_forwards]">
-            <h2 className="text-[3rem] text-[#212121] font-normal">
+          <div className="flex flex-col max-xl:order-2 justify-center gap-[1rem] w-[100%] opacity-0 translate-x-[-50px] animate-[fadeInLeft_1s_ease-out_forwards]">
+            <h2 className="text-[2.5rem] text-[#212121] font-normal">
               {language === "Hindi"
                 ? `एक नई दिशा, एक नया उद्देश्य`
                 : `A New Direction, A New Purpose`}
             </h2>
-            <div className="my-[1rem] w-[100%] h-[1px] bg-[#d2d2d2]"></div>
+            <div className="my-[0rem] w-[100%] h-[1px] bg-[#d2d2d2]"></div>
             <div className="flex flex-col gap-[1rem] w-[100%] mt-[0rem]">
               {ourvisiondata.map((e) => {
                 return (
                   <p
                     key={e.id}
-                    className="text-[1.8rem] text-[#212121] font-normal"
+                    className="text-[1.7rem] text-[#212121] font-normal"
                   >
                     {language === "Hindi" ? e.title : e.title2}
                   </p>
@@ -45,8 +45,8 @@ const OurVision = () => {
               })}
             </div>
           </div>
-          <div className="flex items-center justify-center w-[auto] h-[100%] opacity-0 translate-x-[50px] animate-[fadeInRight_1s_ease-out_forwards]">
-            <img src={Our_vision_img} alt="img" className="w-[100%] h-[100%]" />
+          <div className="flex items-center justify-center w-[auto] px-[1rem] py-[1rem] h-[100%] opacity-0 translate-x-[50px] animate-[fadeInRight_1s_ease-out_forwards] border-[1px] border-[#d2d2d2] rounded-md shadow-xl">
+            <img src={Our_vision_img} alt="img" className="w-[100%] h-[auto] rounded-md" />
           </div>
         </div>
       </div>

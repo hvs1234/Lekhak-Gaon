@@ -12,7 +12,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 2,
-    img: `/Media/Home/2.png`,
+    img: `/Media/Home/pic7.jpg`,
     title: `रम्माण भवन`,
     title2: `Ramman Bhawan`,
     subtitle: `(प्रेक्षागृह)`,
@@ -67,7 +67,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 7,
-    img: `/Media/Home/pic3.jpg`,
+    img: `/Media/Home/pic7.jpg`,
     title: `नीलकंठ भवन`,
     title2: `Neelkanth Bhawan`,
     subtitle: `(हिमालय एवं गंगा संग्रहालय)`,
@@ -78,7 +78,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 8,
-    img: `/Media/Home/pic4.jpg`,
+    img: `/Media/Home/pic8.jpg`,
     title: `लेखक कुटीर`,
     title2: `Author's Cottage`,
     subtitle: ``,
@@ -89,7 +89,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 9,
-    img: `/Media/Home/pic5.jpg`,
+    img: `/Media/Home/pic9.jpg`,
     title: `सुंदर लाल बहुगुणा`,
     title2: `Sunder Lal Bahuguna`,
     subtitle: `(पर्यावरण पथ)`,

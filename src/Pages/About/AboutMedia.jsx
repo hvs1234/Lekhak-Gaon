@@ -17,14 +17,14 @@ const AboutMedia = () => {
             Lekhak Gaon Festival Highlights 2024
           </h2>
           <div className="w-[100%] flex justify-center items-center rounded-md">
-            <iframe
-              src="https://www.youtube.com/embed/mMdVy9fQMy8?si=EEmisknqoz_YufrW"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-              className="w-[100%] h-[600px] rounded-md"
-            ></iframe>
+            <video
+              src="https://www.youtube.com/live/QCK-SQfx6Gk?si=DPgX2QQxvCRKWCfz"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-[100%] h-[300px] rounded-md transition-all duration-500 ease-in-out"
+            ></video>
           </div>
         </div>
       </div>

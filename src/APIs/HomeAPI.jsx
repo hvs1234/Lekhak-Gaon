@@ -1,7 +1,7 @@
 export const HomeAboutTourData = [
   {
     id: 1,
-    img: `/Media/Home/1.png`,
+    img: `/Media/Home/pic1.jpg`,
     title: `राहुल सांकृत्यायन भवन`,
     title2: `Rahul Sankrityayan Bhawan`,
     subtitle: `(लेखक अतिथि गृह)`,
@@ -23,7 +23,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 3,
-    img: `/Media/Home/3.png`,
+    img: `/Media/Home/pic3.jpg`,
     title: `नालंदा भवन`,
     title2: `Nalanda Bhawan`,
     subtitle: `(पुस्तकालय)`,
@@ -34,7 +34,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 4,
-    img: `/Media/Home/4.png`,
+    img: `/Media/Home/pic4.jpg`,
     title: ` द्रोणागिरी भवन`,
     title2: `Dronagiri Bhavan`,
     subtitle: `(प्राकृतिक चिकित्सा केंद्र)`,
@@ -45,7 +45,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 5,
-    img: `/Media/Home/5.png`,
+    img: `/Media/Home/pic5.jpg`,
     title: `महर्षि व्यास भवन`,
     title2: `Maharishi Vyas Bhavan`,
     subtitle: `(ध्यान केंद्र)`,
@@ -56,7 +56,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 6,
-    img: `/Media/Home/6.png`,
+    img: `/Media/Home/pic6.jpg`,
     title: `महर्षि कण्व भवन`,
     title2: `Maharishi Kanva Bhavan`,
     subtitle: `(परम्परागत ज्ञान विज्ञान केंद्र)`,
@@ -67,7 +67,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 7,
-    img: `/Media/Home/3.png`,
+    img: `/Media/Home/pic3.jpg`,
     title: `नीलकंठ भवन`,
     title2: `Neelkanth Bhawan`,
     subtitle: `(हिमालय एवं गंगा संग्रहालय)`,
@@ -78,7 +78,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 8,
-    img: `/Media/Home/4.png`,
+    img: `/Media/Home/pic4.jpg`,
     title: `लेखक कुटीर`,
     title2: `Author's Cottage`,
     subtitle: ``,
@@ -89,7 +89,7 @@ export const HomeAboutTourData = [
   },
   {
     id: 9,
-    img: `/Media/Home/5.png`,
+    img: `/Media/Home/pic5.jpg`,
     title: `सुंदर लाल बहुगुणा`,
     title2: `Sunder Lal Bahuguna`,
     subtitle: `(पर्यावरण पथ)`,

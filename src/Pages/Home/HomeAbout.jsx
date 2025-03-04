@@ -84,23 +84,26 @@ const HomeAbout = () => {
                 className="flex flex-col gap-[0rem] justify-start items-center text-center w-[100%] h-[100%] bg-[#ffc0e6] rounded-2xl 
                 px-[0.1rem] py-[0.1rem] transition-all duration-[0.6s] ease-out hover:translate-y-[-2rem]"
               >
-                <div className="flex items-center justify-center w-[100%] rounded-t-2xl">
+                <div className="flex items-center justify-center w-[100%] h-[100%] rounded-t-2xl">
                   <img
                     src={e.img}
                     alt="img"
-                    className="w-[100%] rounded-t-2xl"
+                    className="w-[100%] flex justify-center items-center object-cover h-[100%] rounded-t-2xl"
                   />
                 </div>
                 <div
-                  className={`px-[2rem] py-[2rem] text-center flex flex-col gap-[1rem] w-[100%] h-[100%] justify-start items-center ${e.descBoxClass} rounded-b-2xl`}
+                  className={`px-[2rem] py-[2rem] text-center flex flex-col gap-[1rem] w-[100%] h-[100%] 
+                  justify-start items-center ${e.descBoxClass} rounded-b-2xl`}
                 >
                   <p className="text-[2.2rem] text-[white] font-normal">
                     {language === "Hindi" ? e.title : e.title2}
                   </p>
                   <p className="text-[2.2rem] text-[white] font-normal">
-                  {language === "Hindi" ? e.subtitle : e.subtitle2}
+                    {language === "Hindi" ? e.subtitle : e.subtitle2}
                   </p>
-                  <p className="text-[1.6rem] text-[white]">{language === "Hindi" ? e.desc : e.desc2}</p>
+                  <p className="text-[1.6rem] text-[white]">
+                    {language === "Hindi" ? e.desc : e.desc2}
+                  </p>
                 </div>
               </div>
             );

@@ -44,9 +44,31 @@ const OurVision = () => {
                 );
               })}
             </div>
+            <div className="flex flex-col gap-[0.2rem] w-full mt-[1rem]">
+              <p className="text-[1.7rem] text-[#212121] font-normal">
+                Dr. Ramesh Pokhriyal Nishank
+              </p>
+              <p className="text-[1.7rem] text-[#212121] font-normal">
+                (Former Minister of Education of India)
+              </p>
+            </div>
           </div>
-          <div className="flex items-center justify-center w-[auto] px-[1rem] py-[1rem] h-[100%] opacity-0 translate-x-[50px] animate-[fadeInRight_1s_ease-out_forwards] border-[1px] border-[#d2d2d2] rounded-md shadow-xl">
-            <img src={Our_vision_img} alt="img" className="w-[100%] h-[auto] rounded-md" />
+          <div className="relative flex items-center justify-center w-[auto] px-[1rem] py-[1rem] h-[100%] opacity-0 translate-x-[50px] animate-[fadeInRight_1s_ease-out_forwards] border-[1px] border-[#d2d2d2] rounded-md shadow-xl">
+            <div className="absolute bottom-[1rem] left-[1rem] z-[10] bg-[#353537] w-[auto] px-[2rem] py-[1rem] rounded-r-xl">
+              <div className="flex flex-col gap-[0.2rem] justify-center">
+                <p className="text-[1.6rem] text-[white] font-normal">
+                  Dr. Ramesh Pokhriyal Nishank
+                </p>
+                <p className="text-[1.6rem] text-[white] font-normal">
+                  (Former Minister of Education of India)
+                </p>
+              </div>
+            </div>
+            <img
+              src={Our_vision_img}
+              alt="img"
+              className="w-[100%] h-[auto] rounded-md"
+            />
           </div>
         </div>
       </div>

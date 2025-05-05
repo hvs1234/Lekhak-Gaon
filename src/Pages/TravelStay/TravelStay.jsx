@@ -24,7 +24,6 @@ const TravelStay = () => {
       <TravelStayMain />
       <TravelStaySlider />
 
-
       {/* Footer */}
 
       <ScrollTop />
